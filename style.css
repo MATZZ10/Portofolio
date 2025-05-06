@@ -1,0 +1,232 @@
+/* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2d2d2d;
+  color: white;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  background-color: #1c1c1c;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.header-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.header-text p {
+  font-size: 18px;
+  color: #bbb;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #4e90e2;
+}
+
+/* Section */
+.section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: #333;
+  padding: 20px;
+  margin: 15px;
+  width: 30%;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.project-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  color: #4e90e2;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+.project-card {
+  background-color: #333;
+  padding: 20px;
+  margin: 15px;
+  width: 30%;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+/* Responsif untuk project-card dan gambar */
+@media (max-width: 1024px) {
+  .project-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 90%;
+  }
+}
+
+ul {
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 2;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .header-text h1 {
+    font-size: 28px;
+  }
+  
+  .header-text p {
+    font-size: 16px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  ul li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .header-text h1 {
+    font-size: 24px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  ul li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 20px 0;
+  }
+
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header-text h1 {
+    font-size: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .project-card {
+    width: 95%;
+  }
+}
